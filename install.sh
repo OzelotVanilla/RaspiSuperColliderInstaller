@@ -21,6 +21,8 @@ sudo apt install -y supercollider
 # Download two scripts.
 wget -P "$home_directory" -O start.sh "$start_sh_url"
 wget -P "$home_directory" -O stop.sh  "$stop_sh_url"
+chmod +x "$home_directory/start.sh"
+chmod +x "$home_directory/stop.sh"
 
 # Create empty `start.scd`.
 touch "$home_directory/start.scd"
