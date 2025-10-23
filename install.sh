@@ -15,7 +15,7 @@ cd $home_directory
 # Download necessary packages.
 sudo apt update -y
 sudo apt full-upgrade -y
-sudo apt install -y jackd2 # yes, for RT priority
+sudo apt DEBIAN_FRONTEND=noninteractive install -y jackd2
 sudo apt install -y supercollider
 
 # Download two scripts.
